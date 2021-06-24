@@ -258,9 +258,7 @@ z-index: -1;
  
   object-fit: cover;
   object-position: 100% 0;
-
- 
-}
+ }
 
 
 
@@ -276,13 +274,15 @@ z-index: -1;
 
 .typography h3 {
   color: hsl(208, 49%, 24%);
-width: 70%
+width: 70%;
+margin-top: 9rem;
+margin-left: 1rem;
 }
 
 .typography p{
-width: 78%;
+width: 75%;
 color: hsl(208, 49%, 24%);
-
+margin: 1rem;
 }
 
 .col1 .container .image-cover {
@@ -297,12 +297,12 @@ color: hsl(208, 49%, 24%);
 .links-burger {
   display: none;
   width: 10px;
-  border: none;
+  border: none ;
   background: transparent;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 8rem;
-  margin-top: -3rem;
+  margin-top: -4rem;
 }
 .links-burger hr {
   border-width: 2px;
@@ -315,32 +315,93 @@ color: hsl(208, 49%, 24%);
 .col2 .container {
   background-color: hsl(208, 49%, 24%);
   margin-top: 30rem;
- 
+
   display: flex;
   flex-direction: row;
   color: hsla(0, 0%, 100%, 0.75);
-height: 30vh;
+height: 50vh;
   border-radius: 0px 50px 0px 50px;
-}.col2 p{
- text-align: right;
- margin-left: 15rem;
- width: 
+}
+.col2 p{
+ text-align: center;
+ text-align: justify; 
+ margin-left: 6.5rem;
+ width: 65%;
 }
 .col2 h2{
- text-align: right;
+  margin-bottom: 1rem;
+ text-align: center;
   width: 70%;
+  margin-top: 7rem;
 }
 
 .col2 img{
-  width: 300px;
-  height: 300px;
-  top: 20%;
-z-index: -1;
-padding-bottom: 10rem;
+ width: 500px;
+  bottom: 20%;
+  position: relative; top: -5rem;
+
+}
+
+
+.col3 .container {
+  margin-top: 20rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+
+  
+}
+
+.col3 .container img {
+ 
+  position: static;
+  z-index: -1;
+    position: absolute;
+    top: 250%;
+   
+    object-fit: cover;
+    object-position: 0% 180%;
+width: 600px;
+    position: absolute;
+    padding-top: -3rem;
+    top: 315%;
+    left: 15%;
+  
+    transform: translate(-50%, -50%);
+  
+  
 }
 
 
 
+.col3 .container .typography1 {
+  
+ 
+  margin-top: -6rem;
+ margin-left: 6rem;
+}
+
+.col3 .typography1 h3 {
+  color: hsl(208, 49%, 24%);
+width: 70%;
+margin-top: 2rem;
+margin-left: 0.5rem;
+font-weight: 600;
+}
+
+.col3 .typography1 p {
+width: 70%;
+color: hsl(208, 49%, 24%);
+margin: 0.5rem;
+font-weight: 300;
+margin-bottom: -2rem;
+}
+.col3 .typography1 p .k{
+  width: 83%;
+  color: hsl(208, 49%, 24%);
+  margin: 0.5rem;
+  font-weight: 300;
+  margin-bottom: -2rem;
+  }
 
 .navigation-mobile {
   display: none;
@@ -387,7 +448,58 @@ top: -20%;
   font-weight: bold;
 }
 
+.footer{
+  background: hsl(208, 49%, 24%);;
+  margin-top: 10.5263157894737%;
+  padding-left: 11.7293233082707%;
+  padding-right: 10.1503759398496%;
+  padding-top: 6.01503759398496%;
+  padding-bottom: 6.01503759398496%;
+  border-radius: 0px 50px 0px 0px;
+}
 
+.footer .logo{
+  margin-top: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  color: hsl(208, 49%, 24%);
+}
+.footer .logo p{
+  color: #2C2640;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.footer .r2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer .r2 .column .coltitle{
+  margin-top: 3.53383458646617%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.footer .r2 .column .colcontent{
+  color: hsl(0, 0%, 100%);
+}
+.footer .cc .line{
+  width: 100%;
+  height: 2px;
+  background-color: #eee;
+  margin-top: 2.25563909774436%;
+
+}
+.footer .r2 .column{
+  margin-top: 2.25563909774436%;
+
+}
+.footer a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
 
   @media only screen and (max-width: 600px) {
   
@@ -423,8 +535,8 @@ top: -20%;
        margin-top: 5rem;
       position: absolute;
       top: 15%;
-      left: 20%;
- width: 26%;
+      left: 45%;
+ width: 58%;
       transform: translate(-50%, -50%);
       font-weight: 600;
      text-align: center;
@@ -432,19 +544,24 @@ top: -20%;
     .rt{
       margin-top: 5rem;
       position: absolute;
-      top: 35%;
-      left: 20%;
- width: 24%;
+      top: 39%;
+      left: 45%;
+ width: 64%;
       transform: translate(-50%, -50%);
       font-weight: 600;
      text-align: center;
+    }
+    .typography h2{
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      position: absolute;
     }
     .gri{
       
         margin-top: 5rem;
       position: absolute;
-      top: 50%;
-      left: 20%;
+      top: 55%;
+      left: 40%;
       border-radius: 50%;
       transform: translate(-50%, -50%);
     }
@@ -459,12 +576,16 @@ top: -20%;
       font-weight: 600;
       margin-bottom: 1rem;
     }
-   .image-cover{
-      background-image: url('./assets/illustration-editor-mobile.svg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-    }
+    .col1 .container img {
+      
+       position: static;
+     z-index: -1;
+       position: absolute;
+       top: 60%;
+      width: 400px;
+       object-fit: cover;
+       object-position: 100% 0;
+      }
     .col2 .container {
       background-color: hsl(208, 49%, 24%);
       margin-top: 30rem;
@@ -481,5 +602,83 @@ top: -20%;
       flex-direction: column;
       
     } 
+
+    
+.col2 .container {
+  background-color: hsl(208, 49%, 24%);
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  color: hsla(0, 0%, 100%, 0.75);
+height: 55vh;
+  border-radius: 0px 50px 0px 50px;
+}
+.col2 img{
+  width: 300px;
+   bottom: 20%;
+   position: relative; top: -5rem;
+ 
+ }
+ .col2 p{
+  text-align: center;
+  text-align: justify; 
+  margin-left: 6.5rem;
+  width: 65%;
+ }
+ .col2 h2{
+   margin-left: 4rem;
+   margin-bottom: 1rem;
+  text-align: center;
+
+   width: 70%;
+   margin-top: -7rem;
+ }
+ .col3 .container {
+  margin-top: 20rem;
+ display: flex;
+ flex-direction: column;
+}
+.col3 .container img {
+  
+   position: static;
+   z-index: -1;
+     position: absolute;
+     top: 250%;
+    
+     object-fit: cover;
+     object-position: 0% 180%;
+ width: 600px;
+     position: absolute;
+     padding-top: -3rem;
+     top: 280%;
+     left: 30%;
+  
+     transform: translate(-50%, -50%);
+   
+   
+ }
+ 
+.col3 .container .typography1 {
+  
+ 
+  margin-top: 6rem;
+ margin-left: 6rem;
+}
+    .footer .logo{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+  }
+  .footer .r2{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  .footer{
+
+    padding-bottom: 30%;
+  
+  }
 }
   
